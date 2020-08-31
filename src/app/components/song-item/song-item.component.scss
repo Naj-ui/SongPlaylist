@@ -1,0 +1,30 @@
+.card-header{
+    background-color: white;
+    .song-name{
+    font-weight: bold;
+}
+.song-desc-color{
+    color: rgba(0,0,0,.54)
+}
+}
+.icon-music{
+    text-align: center;
+    i{
+        font-size: 18px;
+    }
+}
+.actionsBTN-delete{
+    color: #f44336;
+    &:hover{
+        background-color: #fff7f7;
+        cursor: pointer;
+    }
+}
+
+.actionsBTN-edit{
+    color: black;
+    &:hover{
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,33 @@
+<div class="song mt-5">
+  <div class="card">
+    <div class="card-header">
+      <p class="song-name mb-0">
+        {{song.name}}
+      </p>
+      <p class="song-desc-color" >
+              totale: {{song.totalSongs}} songs, {{song.totalDuration}} minutes
+      </p>
+      <p class="song-desc mb-0">
+        {{song.description}}
+      </p>
+    </div>
+    <div class="card-body">
+      <div class="songs mb-4" *ngFor="let songItem of song.songs">
+        <div class="row align-items-center">
+          <div class="col-1 icon-music">
+              <i class="fa fa-music align-self-center"></i>
+          </div>
+          <div class="col-11">
+            {{songItem.title}} <br/>
+            {{songItem.artist}}. {{songItem.duration}} minutes
+          </div>
+        </div>
+        
+      </div>
+      <div class="actions">
+        <a href="#" class="actionsBTN-delete mr-4 " (click)="delete()">DELETE</a>
+        <a href="#" class="actionsBTN-edit" (click)="edit()">EDIT</a>
+      </div>
+    </div>
+  </div>
+</div>

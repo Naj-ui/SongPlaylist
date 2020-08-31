@@ -1,0 +1,30 @@
+.cancel{
+    background-color:  #f44336;
+    color: white;
+    font-weight: bold;
+    &:hover{
+        cursor: pointer;
+    }
+ }
+
+ .submit{
+    color: gray;
+    font-weight: bold;
+    background-color: whitesmoke;
+    &.active{
+        color: white;
+        background-color: #3f51b5;
+        &:hover{
+            cursor: pointer;
+            background-color: #3f51b5;
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        background-color: whitesmoke;
+    }
+   
+ }
+ .invalid{
+     border: 1px solid red;
+ }
